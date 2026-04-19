@@ -236,6 +236,261 @@
   </div>
 </div>
 
+<section id="features">
+  <div class="reveal">
+    <span class="section-tag">Platform</span>
+    <h2 class="section-title">Built for the<br/>builders of tomorrow</h2>
+    <p class="section-sub">Everything you need to build, deploy, and scale AI-powered applications from a single platform.</p>
+  </div>
+  <div class="features-grid reveal">
+    <div class="feature-card"><div class="feature-icon icon-purple">🧠</div><div class="feature-title">Frontier Intelligence</div><div class="feature-desc">Powered by Gemini — Google's most capable model. Understands context, nuance, and complex reasoning across any domain.</div></div>
+    <div class="feature-card"><div class="feature-icon icon-teal">⚡</div><div class="feature-title">Lightning Fast</div><div class="feature-desc">Sub-second responses with streaming output. Built on a high-performance Flask backend optimized for real-time chat.</div></div>
+    <div class="feature-card"><div class="feature-icon icon-pink">💬</div><div class="feature-title">Memory & Context</div><div class="feature-desc">Maintains full conversation history. Remembers what you said 20 messages ago and connects the dots intelligently.</div></div>
+    <div class="feature-card"><div class="feature-icon icon-purple">🔒</div><div class="feature-title">Private & Secure</div><div class="feature-desc">Your conversations stay yours. API keys are stored securely in environment variables and never exposed.</div></div>
+    <div class="feature-card"><div class="feature-icon icon-teal">🛠️</div><div class="feature-title">Developer First</div><div class="feature-desc">Simple REST API. Clean Python codebase. Deploy anywhere — from local to cloud in minutes with zero config.</div></div>
+    <div class="feature-card"><div class="feature-icon icon-pink">🌐</div><div class="feature-title">Deploy Anywhere</div><div class="feature-desc">One-click deploy to Render, Railway, or any cloud. Your agent goes from laptop to the world in under 5 minutes.</div></div>
+  </div>
+</section>
+
+<section class="demo-section" id="demo">
+  <div class="demo-layout">
+    <div class="demo-text reveal">
+      <span class="section-tag">Live Demo</span>
+      <h2 class="section-title">See the agent<br/>in action</h2>
+      <p class="section-sub">Ask anything — from data science questions to coding help to general knowledge. The agent handles it all.</p>
+      <br/><br/>
+      <a href="#" class="btn-hero btn-hero-primary" onclick="openChat();return false;">Try it yourself →</a>
+    </div>
+    <div class="chat-demo-window reveal">
+      <div class="chat-demo-header">
+        <div class="chat-demo-avatar">🤖</div>
+        <div>
+          <div class="chat-demo-name">NexusAI Agent</div>
+          <div class="chat-demo-status"><div class="badge-dot" style="width:5px;height:5px;"></div>Online</div>
+        </div>
+      </div>
+      <div class="chat-demo-body">
+        <div class="demo-msg bot"><div class="demo-bubble bot">Hello! I'm NexusAI. Ask me anything about data science, coding, or whatever's on your mind 👋</div></div>
+        <div class="demo-msg user"><div class="demo-bubble user">What is overfitting in machine learning?</div></div>
+        <div class="demo-msg bot"><div class="demo-bubble bot">Overfitting happens when a model memorizes training data — including noise — and fails to generalize. Think of memorizing answers vs understanding concepts. 🎯</div></div>
+        <div class="demo-msg user"><div class="demo-bubble user">How do I fix it?</div></div>
+        <div class="demo-msg bot"><div class="demo-bubble bot">Use regularization (L1/L2), dropout, cross-validation, or get more data. Early stopping also helps a lot!</div></div>
+      </div>
+      <div class="demo-input-bar"><div class="demo-input-text">Ask a question...</div><div class="demo-send">→</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="stats-section">
+  <div class="reveal">
+    <span class="section-tag">By the numbers</span>
+    <h2 class="section-title">Performance that speaks</h2>
+  </div>
+  <div class="stats-grid reveal">
+    <div class="stat-card"><div class="stat-num">&lt;1s</div><div class="stat-label">Average response time</div></div>
+    <div class="stat-card"><div class="stat-num">∞</div><div class="stat-label">Topics it can handle</div></div>
+    <div class="stat-card"><div class="stat-num">20+</div><div class="stat-label">Messages of memory</div></div>
+  </div>
+</section>
+
+<section id="how" style="background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+  <div class="reveal">
+    <span class="section-tag">How it works</span>
+    <h2 class="section-title">Simple by design,<br/>powerful by nature</h2>
+  </div>
+  <div class="steps reveal">
+    <div class="step-card"><div class="step-num-big">01</div><div class="step-line"></div><div class="step-title">You type a message</div><div class="step-desc">Your message is captured by the HTML/JS frontend and sent to the Flask backend via a POST request.</div></div>
+    <div class="step-card"><div class="step-num-big">02</div><div class="step-line"></div><div class="step-title">Flask processes it</div><div class="step-desc">Python backend appends your message to the conversation history and prepares the API call.</div></div>
+    <div class="step-card"><div class="step-num-big">03</div><div class="step-line"></div><div class="step-title">Gemini thinks</div><div class="step-desc">Google's Gemini model processes the full conversation and generates a contextual, intelligent response.</div></div>
+    <div class="step-card"><div class="step-num-big">04</div><div class="step-line"></div><div class="step-title">You get an answer</div><div class="step-desc">The reply is returned to the frontend and displayed instantly in the chat UI with timestamps.</div></div>
+  </div>
+</section>
+
+<section class="cta-section" id="about">
+  <div class="cta-glow"></div>
+  <div class="reveal">
+    <h2>Ready to build something <span style="background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">remarkable?</span></h2>
+    <p>Start chatting with the AI agent right now — no signup, no friction.</p>
+    <a href="#" class="btn-hero btn-hero-primary" onclick="openChat();return false;">Launch AI Agent →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="#" class="nav-logo" style="font-size:18px;text-decoration:none"><div class="logo-dot"></div>NexusAI</a>
+      <p>A hackathon-built AI agent powered by Google Gemini. Fast, smart, and deployable anywhere.</p>
+    </div>
+    <div class="footer-col"><h4>Product</h4><ul><li><a href="#">Features</a></li><li><a href="#">Demo</a></li><li><a href="#">How it works</a></li><li><a href="#">Deploy</a></li></ul></div>
+    <div class="footer-col"><h4>Tech Stack</h4><ul><li><a href="#">Python / Flask</a></li><li><a href="#">Google Gemini</a></li><li><a href="#">HTML / CSS / JS</a></li><li><a href="#">Render.com</a></li></ul></div>
+    <div class="footer-col"><h4>Resources</h4><ul><li><a href="https://github.com" target="_blank">GitHub</a></li><li><a href="https://ai.google.dev" target="_blank">Gemini Docs</a></li><li><a href="https://flask.palletsprojects.com" target="_blank">Flask Docs</a></li><li><a href="https://render.com" target="_blank">Deploy Free</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 NexusAI. Built with ❤️ at a hackathon.</p>
+    <div class="footer-socials"><a href="#">GitHub</a><a href="#">LinkedIn</a><a href="#">Twitter</a></div>
+  </div>
+</footer>
+
+<!-- CHAT OVERLAY -->
+<div class="chat-page" id="chat-page">
+  <div class="chat-nav">
+    <button class="chat-back" onclick="closeChat()">← Back to home</button>
+    <a href="#" class="nav-logo" style="font-size:16px;text-decoration:none"><div class="logo-dot"></div>NexusAI</a>
+    <button class="btn-ghost" style="font-size:12px" onclick="clearChat()">Clear chat</button>
+  </div>
+  <div class="chat-body" id="chat-body">
+    <div class="chat-welcome" id="chat-welcome">
+      <h2>Hello, I'm NexusAI 👋</h2>
+      <p>Ask me anything — data science, coding, general knowledge, or just chat.</p>
+    </div>
+  </div>
+  <div class="chat-input-area">
+    <div class="chat-input-box">
+      <textarea id="chat-input" placeholder="Ask me anything..." rows="1" oninput="autoResize(this)"></textarea>
+      <button class="chat-send" id="chat-send-btn" onclick="sendMessage()">
+        <svg viewBox="0 0 24 24"><path d="M2 21L23 12 2 3v7l15 2-15 2v7z"/></svg>
+      </button>
+    </div>
+    <p class="chat-hint">Press Enter to send · Shift+Enter for new line</p>
+  </div>
+</div>
+
+<script>
+  // Smooth reveal animations
+  const reveals = document.querySelectorAll('.reveal');
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach((e, i) => { 
+      if(e.isIntersecting) setTimeout(() => e.target.classList.add('visible'), i * 80); 
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(r => obs.observe(r));
+
+  function openChat() { 
+    document.getElementById('chat-page').classList.add('open'); 
+    document.body.style.overflow = 'hidden'; 
+  }
+
+  function closeChat() { 
+    document.getElementById('chat-page').classList.remove('open'); 
+    document.body.style.overflow = ''; 
+  }
+
+  function getTime() { 
+    return new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }); 
+  }
+
+  function autoResize(el) { 
+    el.style.height = 'auto'; 
+    el.style.height = Math.min(el.scrollHeight, 120) + 'px'; 
+  }
+
+  function addMessage(text, role) {
+    const welcome = document.getElementById('chat-welcome');
+    if (welcome) welcome.remove();
+
+    const body = document.getElementById('chat-body');
+    const row = document.createElement('div');
+    row.className = 'msg-row ' + role;
+
+    const avatar = document.createElement('div');
+    avatar.className = 'msg-avatar ' + role;
+    avatar.textContent = role === 'bot' ? 'AI' : 'You';
+
+    const wrap = document.createElement('div');
+    const bubble = document.createElement('div');
+    bubble.className = 'msg-bubble ' + role;
+    bubble.textContent = text;
+
+    const time = document.createElement('div');
+    time.className = 'msg-time';
+    time.textContent = getTime();
+
+    wrap.appendChild(bubble);
+    wrap.appendChild(time);
+    row.appendChild(avatar);
+    row.appendChild(wrap);
+    body.appendChild(row);
+    body.scrollTop = body.scrollHeight;
+  }
+
+  function showTyping() {
+    const body = document.getElementById('chat-body');
+    const row = document.createElement('div');
+    row.className = 'msg-row bot';
+    row.id = 'typing-row';
+
+    const avatar = document.createElement('div');
+    avatar.className = 'msg-avatar bot';
+    avatar.textContent = 'AI';
+
+    const typing = document.createElement('div');
+    typing.className = 'typing';
+    typing.innerHTML = '<span></span><span></span><span></span>';
+
+    row.appendChild(avatar);
+    row.appendChild(typing);
+    body.appendChild(row);
+    body.scrollTop = body.scrollHeight;
+  }
+
+  function removeTyping() {
+    const typingRow = document.getElementById('typing-row');
+    if (typingRow) typingRow.remove();
+  }
+
+  async function sendMessage() {
+    const input = document.getElementById('chat-input');
+    const btn = document.getElementById('chat-send-btn');
+    const text = input.value.trim();
+
+    if (!text) return;
+
+    addMessage(text, 'user');
+    input.value = '';
+    input.style.height = 'auto';
+    btn.disabled = true;
+    showTyping();
+
+    try {
+      const res = await fetch('/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: text })
+      });
+
+      const data = await res.json();
+      removeTyping();
+
+      if (data.reply) {
+        addMessage(data.reply, 'bot');
+      } else {
+        addMessage("Something went wrong. Please try again.", 'bot');
+      }
+    } catch (err) {
+      removeTyping();
+      addMessage("Connection error. Is the server running?", 'bot');
+    }
+
+    btn.disabled = false;
+    input.focus();
+  }
+
+  async function clearChat() {
+    await fetch('/clear', { method: 'POST' });
+    document.getElementById('chat-body').innerHTML = `
+      <div class="chat-welcome" id="chat-welcome">
+        <h2>Hello, I'm NexusAI 👋</h2>
+        <p>Ask me anything — data science, coding, general knowledge, or just chat.</p>
+      </div>`;
+  }
+
+  document.getElementById('chat-input').addEventListener('keydown', e => {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      sendMessage();
+    }
+  });
+
 </script>
 </body>
 </html>
